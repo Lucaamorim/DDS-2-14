@@ -1,0 +1,17 @@
+package exemplo3;
+
+public class Exemplo3 {
+
+    public static void main(String[] args) {
+        int x =10 , y =3;
+        
+        
+        System.out.println(x+1);
+        System.out.println(x-5);
+        System.out.println(y*8);     
+        System.out.println(x-2);
+        
+       
+    }
+    
+}
