@@ -1,0 +1,16 @@
+package exe5;
+
+public class EXE5 {
+
+    public static void main(String[] args) {
+        
+        boolean temSaldo = true;
+        boolean limiteDisponivel = false;
+        
+        System.out.println(temSaldo && limiteDisponivel);
+        System.out.println(temSaldo && !limiteDisponivel);
+        System.out.println(!temSaldo || limiteDisponivel);
+    }
+    
+}
+
