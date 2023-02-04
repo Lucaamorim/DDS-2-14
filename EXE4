@@ -1,0 +1,15 @@
+package exe4;
+public class EXE4 {
+
+    public static void main(String[] args) {
+        int x =10, y = 3;
+        
+        System.out.println(x==y);
+        System.out.println(x!=y);
+        System.out.println(x<y);
+        System.out.println(x>y);
+        
+        
+    }
+    
+}
