@@ -1,0 +1,28 @@
+package datainput;
+
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class DataInput {
+
+  
+    public static void main(String[] args) throws IOException {
+        
+        String s;
+        float nota1=0, nota2 =0, media = 0;
+        DataInputStream dado;
+        System.out.println("Entre com a Nota 1: ");
+        dado = new DataInputStream(System.in);
+        s = dado.readLine();
+        nota1 = Float.parseFloat(s);
+        
+        System.out.println("Entre com a Nota 2: ");
+        dado = new DataInputStream(System.in);
+         s = dado.readLine();
+         nota2 = Float.parseFloat(s);
+         
+        media = (nota1 + nota2)/2;
+        System.out.println(media);
+    }
+    
+}
