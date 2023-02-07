@@ -30,7 +30,7 @@ public class ImpostoEmpresa {
         } else if (estado.equals("MS")) {
         valorMaisImposto = valorProduto + 8%
         }else{
-        System.ou.println("Verifique seu estado ou o valor do produto e Atualize a página");
+        System.out.println("Verifique seu estado ou o valor do produto e Atualize a página");
         }
         System.out.println("Valor com Imposto: ");
         System.out.print(valorMaisImposto);
