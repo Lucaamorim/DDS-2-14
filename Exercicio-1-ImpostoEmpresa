@@ -1,0 +1,39 @@
+package datainput;
+
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class ImpostoEmpresa {
+
+  
+    public static void main(String[] args) throws IOException {
+        
+        String s, estado;
+        float valorProduto=0, valorMaisImposto = 0;
+        DataInputStream dado;
+        System.out.println("Entre com o Valor do Produto: ");
+        dado = new DataInputStream(System.in);
+        s = dado.readLine();
+        valorProduto = Float.parseFloat(s);
+        
+        System.out.println("Agora insira o Estado de Destino: ");
+        dado = new DataInputStream(System.in);
+        estado = dado.readLine();
+       
+         
+         if (estado.equals("MG")) {
+        valorMaisImposto = valorProduto + 7%;       
+        } else if (estado.equals("SP")) {
+        valorMaisImposto = valorProduto + 12%;        
+        } else if (estado.equals("RJ")) {
+        valorMaisImposto = valorProduto + 15%;      
+        } else if (estado.equals("MS")) {
+        valorMaisImposto = valorProduto + 8%
+        }else{
+        System.ou.println("Verifique seu estado ou o valor do produto e Atualize a página");
+        }
+        System.out.println("Valor com Imposto: ");
+        System.out.print(valorMaisImposto);
+    }
+    
+}
