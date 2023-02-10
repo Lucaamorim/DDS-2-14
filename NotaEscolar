@@ -1,0 +1,33 @@
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class MediaNotas{
+
+public static void main(String[] args) throws IOException{
+
+    String v;
+    int[] notas = new int notas[4];
+    int notaCadastrada;
+    int somaDasNotas;
+    int mediaDasNotas;
+    DataINputStream read;
+    
+    for (int i=0; i < notas.lenght; i++){
+   
+   System.out.println("Favor colocar nota[" + (i+1) + "]: ")
+   read = new DataInputStream(System.in);
+   v = read.readLine();
+   notaCadastrada = Integer.parseInt(v);
+   
+   notas[i] = notasCadastradas;
+    
+   }
+   mediaDasNotas = (nota[0] + nota[1] + nota[2] + nota[3]) /4;
+   somaDasNotas = nota[0] + nota[1] + nota[2] + nota[3];
+   System.out.println("Soma das notas : " + somaDasNotas);
+   System.out.println("Media das notas : " + mediaDasNotas);
+   
+
+}
+
+}
