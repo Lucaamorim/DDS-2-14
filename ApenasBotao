@@ -1,0 +1,31 @@
+
+import javax.swing.*;
+import java.awt.*;
+
+public class JavaFront {
+    
+   
+    public static void main(String[] args) {
+        
+int i;
+JFrame janela = new JFrame ("Naruto Shippuden");
+janela.setBounds(200, 300, 400, 120);
+janela.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+
+        FlowLayout flow = new FlowLayout();
+        Container caixa = janela.getContentPane();
+        caixa.setLayout(flow);
+        
+       String[] ninja = new String ninja ["Sakura","Sasuke","Naruto","Kakashi"];
+        
+        for (i=1; i<=4;i++){
+            
+            caixa.add(new JButton("Aperte "+i));
+            janela.setVisible(true);
+            
+      }
+        
+        
+    }
+    
+}
