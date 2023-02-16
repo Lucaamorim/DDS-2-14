@@ -1,0 +1,47 @@
+import javax.swing.*;
+import java.awt.*;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import java.awt.GridLayout;
+import java.awt.GridBagLayout;
+
+public class Formulario {
+    public static void main(String[] args) {
+        
+JPanel painel = new JPanel();       
+
+JFrame janela = new JFrame ("Avaliação de Jogos Preferidos");
+
+janela.setBounds(200,300,500,500);
+
+janela.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+
+       GridLayout posicao = new GridLayout(8,1); // Descorbrir posição das colunas
+        Container caixa = janela.getContentPane();
+        caixa.setLayout(posicao);  
+       
+        
+        
+        
+       int i;
+       for (i=1;i<=5;){ 
+        JLabel linha = new JLabel("Jogo" + i + ": ");       
+        janela.add(linha);
+        janela.add(new JTextField(15));        
+                      
+       i++;
+            //caixa.add(new JButton());
+            janela.setVisible(true);
+       }
+        
+       // JOptionPane.showMessageDialog(null,"Acertou","Parabens", JOptionPane.WARNING_MESSAGE);
+        
+        
+    }
+    
+    
+}
